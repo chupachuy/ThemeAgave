@@ -1,0 +1,280 @@
+/*
+Theme Name: Agave solutions
+Theme URI: http://agave-solutions.com
+Version: 4.0
+Description: Tema hijo de OnePress
+Author: Jesús López Velázquez
+Author URI: http://loquesea.es
+Template: onepress
+*/
+
+
+/* COLOR VERDE FUERTE #03303a */
+/* COLOR VERDE MAS FUERTE #031e24 */
+
+/* COLOR AZUL CIELO #42aaba */
+/* COLOR AZUL MAS FUERTE #00758f */
+
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.section-title-area .section-title {
+    font-size: 40px;
+    letter-spacing: 3.5px;
+    font-family: 'Montserrat', sans-serif !important;
+    color: #00758f !important;
+}
+
+
+.woocommerce div.product .product_title {
+     color: #00758f !important;
+}
+
+.related.products h2, #tab-description h2 {
+     color: #00758f !important;
+}
+
+.page-header .entry-title, .page-header .page-title {
+    color: #00758f !important;
+}
+
+.woocommerce #reviews #comments h2 {
+    color: #00758f !important;
+}
+
+.site-logo-div{
+	/*color: red;*/
+}
+
+.site-logo-div img{
+	height: 35px;
+	width: auto;
+}
+
+.onepress-menu ul {
+     border: none !important;
+    
+}
+
+.onepress-menu ul li a {
+	border: none !important;
+    background: #42aaba !important;
+    color: #fff !important;
+}
+
+.site-footer .site-info {
+
+    background: #031e24 !important;
+    color: #fff !important;
+}
+
+.site-footer {
+    background: #03303a !important;
+    color: #fff !important;
+}
+.site-footer input[type=email]{
+  font-size: 14px;
+  max-width: 50%;
+}
+
+.see-more {
+    text-align: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-blue h2, .text-blue h3{
+  color: #00758f;
+}
+/* PRODUCTOS HOME */
+
+
+.products-home{
+  margin-bottom: 22px;
+}
+
+.products-home img{
+    width: 100%;
+}
+
+h2.title-products-home{
+    font-weight: 600;
+    padding: 0.5em 0;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.products-home .btn-theme-primary {
+    margin-top: 1.5rem;
+}
+
+
+.video-youtube-product{
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.logo-whatsapp{
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.product_meta{display: none}
+
+:root {
+  --no-of-slides: 8;
+  --slides-in-view: 12;
+  --slide-width: 220px;
+  --slide-height: 110px;
+  --iteration-time: 20s;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(var(--slide-width) * var(--no-of-slides)* -1));
+  }
+}
+
+.carousel__wrapper {
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  
+  width: calc(var(--slides-in-view) * var(--slide-width));
+  overflow: hidden;
+  /*border: 1px dashed gray;*/
+  margin: 0 auto;
+}
+
+.carousel {
+  padding: 10px 0;
+  /*background: lightblue;*/
+  overflow: hidden;
+  width: calc(2 * var(--no-of-slides));
+}
+
+.carousel__slide {
+  animation: scroll var(--iteration-time) linear infinite;
+  display: flex;
+  flex-direction: column;
+  
+  flex: 0 0 auto;
+  width: var(--slide-width);
+  height: var(--slide-height);
+  box-sizing: border-box;
+  /*border: 1px dotted darkblue;*/
+
+}
+.carousel__image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  height: 100%;
+  /*width: 100px;*/
+  margin: 15px 20px;
+}
+
+
+.agave-banner{
+  width: 100%;
+}
+
+
+.agave-banner img{
+  width: 100%;
+}
+
+.separar{
+  height: 50px;
+  clear: both;
+}
+/* just for analysis remove this 3 rules later
+    .carousel__slide {
+      position: relative;
+    }
+
+    .carousel {
+      counter-reset: slideNo;
+    }
+
+    .carousel__slide::before {
+      counter-increment: slideNo;
+      content: counter(slideNo);
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      font-size: 2rem;
+      color: lime;
+    }
+
+*/
+
+
+/* WHATS APP */
+
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+  margin-top:16px;
+}
+
+i.fa.fa-whatsapp.my-float {
+    color: #fff;
+}
+
+.info-footer{
+  margin-top: 1.7rem;
+}
+
+
+.image-footer{
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.image-footer .fa{
+  margin-right: 1rem;
+  color: #42aaba;
+}
+
+
+.image-footer img{
+  margin-right: .7rem;
+}
+
+.info-footer{
+  text-align: left;
+}
+
+.footer-social-icons .fa{
+  color: #03c4eb;
+}
